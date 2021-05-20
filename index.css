@@ -1,0 +1,104 @@
+header {
+    text-align: center;
+}
+
+fieldset {
+    border: 10px solid yellow;
+    background-color: rgba(255, 255, 0, 0.2);
+    margin-top: 20px;
+    width: 100%;
+}
+
+fieldset > *:not(:first-child) {
+    padding-left: 40px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row > * {
+    margin-left: 10px;
+}
+
+.name_input {
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.name_input:focus {
+    transition: 0.5s;
+    border: 2px solid cornflowerblue;
+}
+
+select {
+    width: 200px;
+}
+.indicators .row p {
+    width: 60px;
+}
+
+.row p:first-child {
+    width: 100px;
+    text-align: right;
+}
+
+.range {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+
+.range span {
+    text-align: center;
+    color: white;
+    padding: 2px;
+}
+
+.min {
+    background-color: brown;
+}
+
+.max {
+    background-color: purple;
+}
+
+.address_input {
+    height: 40px;
+    width: 350px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    border-radius: 999px;
+    background-color: rgb(23, 98, 238);
+    color: white;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color:cornflowerblue;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width: 568px) {
+    fieldset > *:not(:first-child) {
+        padding-left: 0 ;
+    }
+
+    .row p:first-child {
+        width: 80px;
+        text-align: left;
+    }
+
+    .name_input {
+        font-size: 1.1rem;
+    }    
+    
+    .address_input {
+        width: 200px;
+    }
+}
